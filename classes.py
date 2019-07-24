@@ -11,7 +11,10 @@ class Box:
 
 class Player:
 
-    def __init__(self,diection):
+    def __init__(self):
+        self.box = Box()
+
+    def move(self, dir):
         if dir is True:
             self.box.rect.move_ip(2,0)
         else:
