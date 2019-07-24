@@ -15,12 +15,12 @@ screen = pygame.display.set_mode((1024,720))
 
 def update():
     keys = pygame.key.get_pressed()
-    #if key[k_a]:
-    #    player.move(False)
-    #if key[h_d]:
-    #    player.move(True)
-    #    for i in objectives:
-    #        i.handleCollision(player.box.rect)
+    if keys[23]:
+        player.move(False)
+    if keys[24]:
+        player.move(True)
+        for i in objectives:
+            i.handleCollision(player.box.rect)
 
 def render():
     screen.fill(pygame.Color("blue"))

@@ -3,7 +3,7 @@ import pygame
 class Box:
 
     def __init__ (self):
-        self.rect = pygame.Rect(8,8,8,100)
+        self.rect = pygame.Rect(50,50,50,50)
         self.color = pygame.Color(0,0,0,100)
 
     def colorChange(self):
