@@ -7,7 +7,7 @@ class Box:
         self.color = pygame.Color(0,0,0)
 
     def colorChange(self):
-        self.color = pygame.Color(255,0,0,100)
+        self.color = pygame.Color(0,255,0,100)
 
 class Player:
 
@@ -32,7 +32,7 @@ class Player:
 class Objective:
     def __init__(self):
         self.box = Box()
-        self.box.color = pygame.Color(255,255,255)
+        self.box.color = pygame.Color(255,0,0)
         self.changed = False
 
     def handleCollision(self,rect):

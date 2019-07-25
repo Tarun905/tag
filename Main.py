@@ -50,7 +50,7 @@ def update3():
 
 
 def render():
-    screen.fill(color=pygame.Color("blue"))
+    screen.fill(color=pygame.Color(77, 77, 77))
     screen.fill(player.box.color,player.box.rect)
     for i in objectives:
         screen.fill(i.box.color, i.box.rect)
